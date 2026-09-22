@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الدعم — جدول الضرب ميزو</title>
+<style>
+  :root{--bg:#fff9f2;--surface:#fff;--ink:#23201c;--soft:#6f6558;--brand:#1fa37a;--line:rgba(0,0,0,.08)}
+  @media(prefers-color-scheme:dark){:root{--bg:#13110f;--surface:#1e1b18;--ink:#f5f0ea;--soft:#a99e92;--brand:#35c79a;--line:rgba(255,255,255,.1)}}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:27px;margin:0 0 6px}h2{font-size:19px;margin:30px 0 8px}
+  .lede{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;font-size:18px;margin:24px 0}
+  a{color:var(--brand)}.langs{margin-bottom:24px;font-size:14px}
+  .langs a{text-decoration:none;padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+  .langs a[aria-current=true]{background:var(--brand);color:#fff;border-color:transparent}
+  details{border:1px solid var(--line);border-radius:12px;padding:10px 16px;margin:8px 0;background:var(--surface)}
+  summary{cursor:pointer;font-weight:600}
+  [lang=en]{display:none}html[data-lang=en] [lang=ar]{display:none}html[data-lang=en] [lang=en]{display:revert}
+</style>
+</head>
+<body><div class="wrap">
+<nav class="langs"><a href="?lang=ar" id="to-ar">العربية</a> <a href="?lang=en" id="to-en">English</a></nav>
+
+<div lang="ar">
+<h1>الدعم</h1>
+<p class="lede">راسلنا على <a href="mailto:support@hossamhamouda.com">support@hossamhamouda.com</a> ونرد عادةً خلال يوم عمل.</p>
+<h2>أسئلة شائعة</h2>
+<details><summary>كيف أستعيد اشتراكي على جهاز جديد؟</summary><p>افتح الإعدادات داخل التطبيق ثم اضغط «استعادة المشتريات». يجب أن تكون مسجّل الدخول بنفس حساب App Store.</p></details>
+<details><summary>كيف ألغي الاشتراك؟</summary><p>من إعدادات iPhone ← اسمك ← الاشتراكات ← ميزو. يبقى الاشتراك فعّالًا حتى نهاية المدة المدفوعة.</p></details>
+<details><summary>الأرقام تظهر بالإنجليزية 123 وأريدها عربية ١٢٣</summary><p>افتح الإعدادات داخل التطبيق ← الأرقام ← عربية. هذا الخيار يظهر عندما تكون لغة التطبيق العربية.</p></details>
+<details><summary>لا يوجد صوت</summary><p>تأكد أن «نطق المسائل» مفعّل في إعدادات التطبيق، وأن الجهاز ليس على الوضع الصامت. إن لم يوجد صوت عربي على الجهاز، أضفه من إعدادات iPhone ← إمكانية الوصول ← المحتوى المنطوق.</p></details>
+<details><summary>أين يُحفظ تقدّم طفلي؟</summary><p>على الجهاز نفسه فقط. لا نجمع أي بيانات. انظر <a href="privacy.html?lang=ar">سياسة الخصوصية</a>.</p></details>
+</div>
+
+<div lang="en">
+<h1>Support</h1>
+<p class="lede">Write to <a href="mailto:support@hossamhamouda.com">support@hossamhamouda.com</a>. We usually reply within one working day.</p>
+<h2>Common questions</h2>
+<details><summary>How do I restore my subscription on a new device?</summary><p>Open Settings inside the app and tap “Restore purchases”. You need to be signed in to the same App Store account.</p></details>
+<details><summary>How do I cancel?</summary><p>iPhone Settings → your name → Subscriptions → Mizo. The subscription stays active until the end of the paid period.</p></details>
+<details><summary>There is no sound</summary><p>Check that “Read questions aloud” is on in the app’s Settings and the device is not on silent. If no voice is installed for your language, add one under iPhone Settings → Accessibility → Spoken Content.</p></details>
+<details><summary>Where is my child’s progress stored?</summary><p>On the device only. We collect no data. See the <a href="privacy.html?lang=en">privacy policy</a>.</p></details>
+</div>
+</div>
+<script>(function(){var p=new URLSearchParams(location.search).get("lang");var l=p==="en"||p==="ar"?p:((navigator.language||"ar").slice(0,2)==="ar"?"ar":"en");var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l);h.setAttribute("dir",l==="ar"?"rtl":"ltr");document.title=l==="ar"?"الدعم — جدول الضرب ميزو":"Support — Mizo Times Tables";var c=document.getElementById("to-"+l);if(c)c.setAttribute("aria-current","true")})();</script>
+</body></html>
